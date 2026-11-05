@@ -1,0 +1,221 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;  /* About_zemi と揃える */
+  color: #333;
+  background-color: #ffffff;
+}
+
+.section__header h2 {
+  font-size: 60px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section__header hr {
+  width: 600px;
+  border: 2px solid #3f72af;
+  margin: 10px 0;
+}
+
+/* 全体リスト */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 30px;
+}
+
+/* 左：写真 / 右：テキスト */
+.activity-item {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* 大きいイメージ　*/
+.activity-photo,
+.event-photo {
+  width: 360px;
+  height: 260px;
+  object-fit: contain; 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  background-color: #f2f2f2; 
+}
+
+/* 複数枚の写真グリッド */
+.activity-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 360px;
+  flex-shrink: 0;
+}
+
+.activity-photos .activity-photo {
+  width: 100%;
+  height: 125px;
+}
+
+/* 2列カード：画像の下に説明文 */
+.activity-pair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.activity-subheading {
+  font-size: 26px;
+  color: #333;
+  margin: 20px 0 -30px;
+  padding: 4px 0 4px 14px;
+  border-left: 6px solid #3f72af;
+}
+
+.activity-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.activity-pair .activity-item,
+.activity-trio .activity-item {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.activity-pair .activity-text,
+.activity-trio .activity-text {
+  justify-content: flex-start;
+}
+
+.activity-trio .activity-photo {
+  width: 100%;
+  height: 220px;
+}
+
+.activity-trio .activity-text h3 {
+  font-size: 22px;
+}
+
+.activity-trio .activity-text p {
+  font-size: 16px;
+}
+
+.activity-pair .activity-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* テキスト */
+.activity-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.activity-text h3 {
+  font-size: 28px;
+  color: #3f72af;
+  margin: 0;
+}
+
+.activity-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* イベント項目 */
+.activity-item.event {
+  flex-direction: row;
+  align-items: center;
+}
+
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .activity-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .activity-photo,
+  .event-photo {
+    width: 90%;
+    height: auto;
+  }
+
+  .activity-photos {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .activity-pair,
+  .activity-trio {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-trio .activity-photo {
+    width: 100%;
+    height: 220px;
+  }
+
+  .activity-pair .activity-photo {
+    width: 100%;
+  }
+
+  .activity-photos .activity-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .activity-text {
+    align-items: center;
+  }
+
+  .activity-text h3 {
+    font-size: 22px;
+  }
+
+  .activity-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__header {
+    padding: 32px 20px 16px;
+  }
+
+  .section__header h1,
+  .section__header h2 {
+    font-size: 26px;
+  }
+
+  .section__header p {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .section__header hr {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .activity-item.event {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,351 @@
+/* ----------------------
+  共通スタイル
+-------------------------*/
+.section__header {
+  text-align: left;
+  padding: 70px;
+  margin: 20px 0;
+}
+
+.section__header h2 {
+  font-size: 60px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.section__header p {
+  font-size: 20px;
+  color: #000000;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.section__header hr {
+  width: 600px;
+  border: 2px solid #3f72af;
+  margin: 10px 0;
+}
+
+/* ----------------------
+  教授紹介
+-------------------------*/
+.professor-intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto 60px;
+  max-width: 1200px;
+}
+
+.professor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.professor-photo {
+  width: 440px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.professor-name {
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #3f72af;
+  text-align: center;
+}
+
+.professor-message {
+  font-size: 20px;
+  line-height: 1.8;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  max-width: 600px;
+}
+
+.msg-phrase {
+  display: inline-block;
+}
+
+/* ----------------------
+   ゼミ紹介
+-------------------------*/
+.zemi-description {
+  margin: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zemi-description p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* ----------------------
+  表スタイル
+-------------------------*/
+.about__int__syllabus {
+  width: 95%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.about__int__syllabus tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.about__int__syllabus td {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.about__int__syllabus td:first-child {
+  width: 180px;
+  font-weight: bold;
+  background-color: #f1f5fa;
+  color: #003567;
+  border-right: 1px solid #e0e0e0;
+}
+
+.about__int__syllabus ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.about__int__syllabus ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ----------------------
+  1年の流れ（タイムライン）
+-------------------------*/
+.timeline-title {
+  font-size: 28px;
+  color: #003567;
+  margin: 0 0 24px;
+  padding-left: 10px;
+}
+
+.timeline {
+  list-style: none;
+  width: 95%;
+  margin: 0 auto 60px;
+  padding: 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 24px;
+}
+
+/* 時期ラベル */
+.timeline-period {
+  flex: 0 0 130px;
+  padding-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3f72af;
+  text-align: right;
+}
+
+/* 縦線と丸印 */
+.timeline-body {
+  position: relative;
+  flex: 1;
+  padding: 0 0 32px 32px;
+  border-left: 3px solid #dbe2ef;
+}
+
+.timeline-item:last-child .timeline-body {
+  border-left-color: transparent;
+}
+
+.timeline-body::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: -10px;
+  width: 11px;
+  height: 11px;
+  border: 3px solid #3f72af;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.timeline-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-body h4 {
+  margin: 0;
+  padding: 16px 20px 0;
+  font-size: 20px;
+  color: #003567;
+}
+
+.timeline-body ul {
+  margin: 0;
+  padding: 12px 20px 16px 40px;
+  font-size: 18px;
+}
+
+.timeline-body ul li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* 主なイベントの強調 */
+.timeline-event {
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3f72af;
+  border-radius: 999px;
+}
+
+
+
+
+/* ----------------------
+  レスポンシブ
+-------------------------*/
+@media (max-width: 768px) {
+  .professor-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .professor-photo {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .professor-message {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  .section__header h2 {
+    font-size: 36px;
+  }
+
+  .section__header p,
+  .zemi-description p {
+    font-size: 16px;
+  }
+
+  .section__header hr {
+    width: 300px;
+  }
+
+  .about__int__syllabus td {
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+
+  .about__int__syllabus td:first-child {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  /* タイムラインは時期ラベルを本文の上に置く */
+  .timeline-title {
+    font-size: 22px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 0;
+    padding-left: 20px;
+    border-left: 3px solid #dbe2ef;
+  }
+
+  .timeline-item:last-child {
+    border-left-color: transparent;
+  }
+
+  .timeline-period {
+    position: relative;
+    flex: none;
+    padding: 0 0 8px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .timeline-period::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    width: 11px;
+    height: 11px;
+    border: 3px solid #3f72af;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  .timeline-body {
+    padding: 0 0 28px;
+    border-left: none;
+  }
+
+  .timeline-body::before {
+    display: none;
+  }
+
+  .timeline-body h4 {
+    font-size: 18px;
+    padding: 14px 16px 0;
+  }
+
+  .timeline-body ul {
+    font-size: 16px;
+    padding: 10px 16px 14px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__header {
+    padding: 32px 20px 16px;
+  }
+
+  .section__header h1,
+  .section__header h2 {
+    font-size: 26px;
+  }
+
+  .section__header p {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .section__header hr {
+    width: 100%;
+    max-width: 300px;
+  }
+}

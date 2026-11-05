@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>関西学院大学　大用研究室｜公式ホームページ</title>
+<meta name="description" content="関西学院大学 総合政策学部の大用研究室の公式ホームページです。ゼミ紹介、研究テーマ、メンバー一覧などを掲載しています。">
+
+  <!--css-->
+  <link rel="stylesheet" href="./styles.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--header-->
+  <header class="header">
+    <h1>
+      <a href="./index.html" class="header-title-link">関西学院大学 大用研究室</a>
+    </h1>
+
+    <!--navigation bar-->
+    <!--hamburger toggle (mobile)-->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="メニュー"><span></span></label>
+    <ul class="nav">
+      <li class="nav-item">
+        <a href ="./index.html">Top</a>
+      </li>
+      <!--Research dropdown-->
+      <li class="nav-item dropdown">
+        <a href="#">Research</a>
+        <ul class="dropdown-menu">
+          <!-- AUTOGEN:research-nav:start -->
+          <li><a href="Research_2024.html">2024年度</a></li>
+          <li><a href="Research_2025.html">2025年度</a></li>
+          <!-- AUTOGEN:research-nav:end -->
+        </ul>
+      </li>
+      <!--About dropdown-->
+      <li class="nav-item dropdown">
+        <a href="#">About</a>
+        <ul class="dropdown-menu">
+          <li><a href="About_zemi.html">ゼミ</a></li>
+          <li><a href="About_activity.html">活動</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="./News_list.html">News</a>      
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- intro-section-->
+    <div class="intro-section">
+      <div class="intro-text">
+        <h2><span class="hero-phrase">学びも遊びも</span><span class="hero-phrase">全力で！</span><br>
+          <span class="hero-phrase">挑戦と</span><span class="hero-phrase">好奇心が集まる</span></h2>
+        <p>
+        人工知能（強化学習・機械学習・生成AI）から認知科学まで、幅広い分野を探究する研究室です。
+        研究にはとことん打ち込み、遊ぶときは思いきり楽しむ。そんなメリハリのある環境で、仲間と協力しながらそれぞれの興味を追求し、成長しています。
+        </p>
+      </div>
+      <div class="main-image">
+        <img src="./images/intro_09.jpg" alt="ゼミ室の活動写真9" class="slide">
+        <img src="./images/intro_07.jpg" alt="ゼミ室の活動写真7" class="slide">
+        <img src="./images/intro_08.jpg" alt="ゼミ室の活動写真8" class="slide">
+        <img src="./images/about_activity_meeting.jpg" alt="面談の写真" class="slide">
+        <!--<img src="./images/intro_01.jpg" alt="ゼミ室の活動写真1" class="slide"> -->
+        <img src="./images/intro_02.jpg" alt="ゼミ室の活動写真2" class="slide">
+        <img src="./images/intro_03.jpg" alt="ゼミ室の活動写真3" class="slide">
+        <img src="./images/intro_04.jpg" alt="ゼミ室の活動写真4" class="slide">
+        <img src="./images/intro_05.jpg" alt="ゼミ室の活動写真5" class="slide">
+        <img src="./images/intro_06.jpg" alt="ゼミ室の活動写真6" class="slide">
+      </div>
+    </div>
+
+    <!-- Research section -->
+  <header class="section__header">
+    <h1>Research</h1>
+    <p>研究一覧</p>
+    <hr>
+  </header>
+
+  <!-- Year filter buttons -->
+  <div class="year-filter">
+    <button class="year-btn active" data-year="2024">2024年度</button>
+    <button class="year-btn" data-year="2025">2025年度</button>
+    <button class="year-btn" data-year="2026">2026年度</button>
+  </div>
+
+  <!-- Research card groups by year -->
+  <section class="cards-container">
+    <!-- 2024年度 -->
+    <div class="cards" data-year="2024">
+      <!-- AUTOGEN:featured-cards:2024:start -->
+      <a class="card-link" href="Research_2024.html#research-2024-a-01">
+        <div class="card">
+          <div class="cards-icon">▶</div>
+          <h2>01</h2>
+          <img class="card__icon" src="./images/research_1.svg" alt="">
+          <p>ドローン空撮を用いた<br>山田錦の発育状況把握の効率化</p>
+        </div>
+      </a>
+      <a class="card-link" href="Research_2024.html#research-2024-a-02">
+        <div class="card">
+          <div class="cards-icon">▶</div>
+          <h2>02</h2>
+          <img class="card__icon" src="./images/research_2.svg" alt="">
+          <p>自閉スペクトラム症と過集中<br>～自動検知と通知システムの活用～</p>
+        </div>
+      </a>
+      <a class="card-link" href="Research_2024.html#research-2024-a-03">
+        <div class="card">
+          <div class="cards-icon">▶</div>
+          <h2>03</h2>
+          <img class="card__icon" src="./images/research_3.svg" alt="">
+          <p>画像認識技術を活用した<br>ダンスのパフォーマンス向上支援</p>
+        </div>
+      </a>
+      <!-- AUTOGEN:featured-cards:2024:end -->
+    </div>
+
+    <!-- 2025年度 -->
+    <div class="cards" data-year="2025" style="display: none;">
+      <!-- AUTOGEN:featured-cards:2025:start -->
+      <a class="card-link" href="Research_2025.html#research-2025-a-14">
+        <div class="card">
+          <div class="cards-icon">▶</div>
+          <h2>01</h2>
+          <img class="card__icon" src="./images/genre_mental.svg" alt="">
+          <p>児童の自己理解を促進する対話型感情支援ツールの研究</p>
+        </div>
+      </a>
+      <a class="card-link" href="Research_2025.html#research-2025-a-17">
+        <div class="card">
+          <div class="cards-icon">▶</div>
+          <h2>02</h2>
+          <img class="card__icon" src="./images/genre_visual.svg" alt="">
+          <p>XR技術を用いたデジタル関学三田キャンパスの構築</p>
+        </div>
+      </a>
+      <a class="card-link" href="Research_2025.html#research-2025-a-19">
+        <div class="card">
+          <div class="cards-icon">▶</div>
+          <h2>03</h2>
+          <img class="card__icon" src="./images/genre_ai.svg" alt="">
+          <p>プリキュアシリーズにおけるキャラクターデザインの普遍的構造 ―生成AIを用いた視覚的特徴の段階的変容による「かわいさ」の閾値検討―</p>
+        </div>
+      </a>
+      <!-- AUTOGEN:featured-cards:2025:end -->
+    </div>
+
+    <!-- 2026年度 -->
+    <div class="cards" data-year="2026" style="display: none;">
+      <p class="cards-notice">2026年度の研究は、研究室説明会で公表します。</p>
+    </div>
+  </section>
+  <div class="button-wrapper">
+    <a id="more-button" class="more-button" href="Research_2024.html">もっと見る</a>
+  </div>
+
+<!--research year button javascript-->
+<script>
+  const yearButtons = document.querySelectorAll('.year-btn');
+  const yearCards = document.querySelectorAll('.cards-container .cards');
+  const moreButton = document.getElementById('more-button');
+
+  yearButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedYear = btn.getAttribute('data-year');
+
+      // ボタンのアクティブ状態の切り替え
+      yearButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // 該当年度のカードを表示
+      yearCards.forEach(cards => {
+        if (cards.getAttribute('data-year') === selectedYear) {
+          cards.style.display = 'flex';
+        } else {
+          cards.style.display = 'none';
+        }
+      });
+
+      // "もっと見る" ボタンのリンクを変更
+      if (selectedYear === "2024") {
+        moreButton.setAttribute("href", "Research_2024.html");
+      } else if (selectedYear === "2025") {
+        moreButton.setAttribute("href", "Research_2025.html");
+      }
+      moreButton.style.display = selectedYear === "2026" ? "none" : "";
+    });
+  });
+</script>
+
+
+
+    <!--About section-->
+    <!--About title-->
+    <header class="section__header">
+      <h1>About</h1>
+      <p>大用研究室について</p>
+      <hr>
+    </header>
+    <!--About card-->
+    <section class="cards">
+      <a href="About_zemi.html" class="card-link">
+        <div class="card">
+          <h2>ゼミ</h2>
+          <img class="card__icon" src="./images/about_1.svg" alt="">
+          <p>ゼミ「メディア工房」を紹介します</p>
+        </div>
+      </a>
+      <a href="About_activity.html" class="card-link">
+        <div class="card">
+          <h2>活動</h2>
+          <img class="card__icon" src="./images/about_2.svg" alt="">
+          <p>ゼミの具体的な活動を紹介します</p>
+        </div>
+      </a>
+    </section>
+    
+    
+    <!-- News-section-->
+    <!--News title-->
+    <header class="section__header">
+        <h1>News</h1>
+        <p>ニュース</p>
+        <hr>
+    </header>
+    <!--News box-->
+    <section class="news-section">
+      <a href="./News/News05.html" class="news-link">
+        <div class="news-box">
+          <div class="news-date">2026.03.18</div>
+          <div class="news-content">
+            田中美安さんが「2025年度 小島賞」で奨励賞を受賞しました
+          </div>
+          <div class="news-icon">➔</div>
+        </div>
+      </a>
+
+      <a href="./News/News04.html" class="news-link">
+        <div class="news-box">
+          <div class="news-date">2025.11.14</div>
+          <div class="news-content">
+            大用ゼミから3チームがリサーチ・フェアで研究成果を発表しました
+          </div>
+          <div class="news-icon">➔</div>
+        </div>
+      </a>
+
+    </section>
+    <div class="button-wrapper">
+    <a id="more-button" class="more-button" href="./News_list.html">もっと見る</a>
+    </div>
+
+  </main>
+  <footer>
+    <h1 class="sr-only"> Copyright </h1>
+    <p>
+      Copyright © 2026 oyo lab. All rights reserved
+    </p>
+    <p class="site-credit">本サイトは大用ゼミの学生が制作</p>
+  </footer>
+
+  <script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlides() {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].classList.add('active');
+  }
+
+  // 最初の画像を表示した後、一定間隔で自動的に切り替え開始
+  if (slides.length > 0) {
+    slides[0].classList.add('active');
+    setInterval(showSlides, 4000); // 4秒ごとに自動で切り替え
+  }
+</script>
+
+</body>
+</html>
